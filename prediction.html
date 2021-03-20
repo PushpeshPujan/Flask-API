@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>News Prediction</title>
+    <script src="https://kit.fontawesome.com/6997ffd67f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-light">
+        <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                   <div class="card-header text-center h2"><i class="far fa-newspaper"></i> News Analysis</div>
+                    <div class="card-body">
+                        <form action="/predict" method="post" enctype="multipart/form-data">
+                            <h2 class="card-title text-center text-info"><u>Prediction Result</u></h2>
+                            <p class="card-text text-justify lead"><b>Your Entered News Article : </b>{{news_text}} </p>
+                            <p class="card-text text-muted h4 text-center">belongs to :<b> {{news_category}} Category.</b></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
